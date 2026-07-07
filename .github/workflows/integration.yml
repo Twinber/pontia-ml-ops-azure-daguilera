@@ -34,6 +34,7 @@ jobs:
         continue-on-error: true
 
       - name: Write results on PR
+        if: always()
         uses: actions/github-script@v7
         with:
           script: |
